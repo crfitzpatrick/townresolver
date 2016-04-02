@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Townresolver</string>
+    <string name="googoe_maps_toggle">Open Google Maps</string>
+    <string name="action_settings">Settings</string>
+</resources>
