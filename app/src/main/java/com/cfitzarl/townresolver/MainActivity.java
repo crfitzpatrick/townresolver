@@ -49,17 +49,15 @@ public final class MainActivity extends AppCompatActivity {
 
         ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_PERMISSION_CODE);
 
-        Button updateButton = (Button) findViewById(R.id.updateButton);
+        Button updateButton = (Button) findViewOrThrow(R.id.updateButton);
 
-        if (updateButton != null) {
-            updateButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    switchElements(View.INVISIBLE);
-                    updateCoordinates();
-                }
-            });
-        }
+        updateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchElements(View.INVISIBLE);
+                updateCoordinates();
+            }
+        });
 
         updateCoordinates();
     }
