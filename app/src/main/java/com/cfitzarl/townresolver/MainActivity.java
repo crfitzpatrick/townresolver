@@ -25,7 +25,7 @@ import com.cfitzarl.townresolver.R;
 /**
  * This is the sole activity for this app and thus represents all of its interactions.
  */
-public final class MainActivity extends AppCompatActivity {
+final class MainActivity extends AppCompatActivity {
 
     // This is an ambiguous integer representing the current activity
     private static final int REQUEST_PERMISSION_CODE = 10;
